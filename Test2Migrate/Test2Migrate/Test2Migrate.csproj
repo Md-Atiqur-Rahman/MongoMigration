@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\Schemas\Himel_20230318133952.cs" />
+    <Compile Remove="Migrations\Schemas\Himel_20230318134301.cs" />
+    <Compile Remove="Migrations\Schemas\Migration_202303161017.cs" />
+    <Compile Remove="Migrations\Schemas\Migration_202303161021.cs" />
+    <Compile Remove="Migrations\Schemas\Test23_202303181333.cs" />
+    <Compile Remove="Migrations\Schemas\Test_202303181337.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.19.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+</Project>
